@@ -2,14 +2,14 @@ import requests
 import unittest
 
 
-BASE_URL = 'localhost'
+BASE_URL = 'http://localhost'
 PORT = '8000'
 ENDPOINT = 'notes'
 
-class TestEndpoint(unittest.TestCase):
-    title =  "test title",
-    message = "This is just a title string"
+title =  "test title",
+message = "This is just a title string"
 
+class TestEndpoint(unittest.TestCase):
     def test_post_note(self):
         payload = {
                 "title": title,
